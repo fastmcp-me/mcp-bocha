@@ -1,0 +1,39 @@
+{
+  "name": "@humansean/mcp-bocha",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-bocha": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "tsc && npx @modelcontextprotocol/inspector node dist/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "bocha",
+    "mcp",
+    "server"
+  ],
+  "author": "HumanSean",
+  "license": "MIT",
+  "description": "A simple but helpful MCP server using bocha api service",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intounknown/mcp-bocha.git"
+  },
+  "homepage": "https://github.com/intounknown/mcp-bocha#readme",
+  "bugs": {
+    "url": "https://github.com/intounknown/mcp-bocha/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.2",
+    "@types/node": "^22.15.18",
+    "fastmcp": "^1.27.6",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
