@@ -19,7 +19,10 @@ MCP-Bocha is a tool that exposes Bocha AI's web search API capabilities through 
   "mcpServers": {
     "mcp-bocha": {
       "command": "npx",
-      "args": ["-y", "@humansean/mcp-bocha"]
+      "args": ["-y", "@humansean/mcp-bocha"],
+      "env": {
+        "BOCHA_API_KEY": "YOUR_API_KEY"
+      }
     }
   }
 }
