@@ -1,9 +1,10 @@
+#!/usr/bin/env node
 import { FastMCP } from "fastmcp";
 import { z } from "zod";
 
 const server = new FastMCP({
   name: "mcp-bocha",
-  version: "1.0.0",
+  version: "1.0.1",
 });
 
 const apiKey = process.env.BOCHA_API_KEY;
@@ -35,8 +36,21 @@ server.addTool({
         exclude: params.exclude?.join(","),
       }),
     });
-    const data = await response.json();
-    return JSON.stringify(data);
+
+    const {
+      data: { webPages },
+    } = await response.json();
+
+    const result = [
+      ...webPages.value.map((page: any) => ({
+        type: "text",
+        text: JSON.stringify(page),
+      })),
+    ];
+
+    return {
+      content: result,
+    };
   },
 });
 

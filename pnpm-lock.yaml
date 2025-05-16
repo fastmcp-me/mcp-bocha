@@ -11,9 +11,6 @@ importers:
       '@modelcontextprotocol/sdk':
         specifier: ^1.11.2
         version: 1.11.3
-      '@types/node':
-        specifier: ^22.15.18
-        version: 22.15.18
       fastmcp:
         specifier: ^1.27.6
         version: 1.27.6
@@ -21,6 +18,9 @@ importers:
         specifier: ^3.24.4
         version: 3.24.4
     devDependencies:
+      '@types/node':
+        specifier: ^22.15.18
+        version: 22.15.18
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
