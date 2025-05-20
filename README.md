@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides web search capabilities to AI agents using the Bocha API.
 
+<a href="https://glama.ai/mcp/servers/@intounknown/mcp-bocha">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@intounknown/mcp-bocha/badge" alt="MCP-Bocha MCP server" />
+</a>
+
 ## Introduction
 
 MCP-Bocha is a tool that exposes Bocha AI's web search API capabilities through the Model Context Protocol. It allows AI assistants to search the web programmatically, enabling tasks such as information retrieval, research, and up-to-date data collection.
